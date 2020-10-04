@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using System.Text;
 
 namespace BlackJackGame.Models.Domain
@@ -14,8 +15,10 @@ namespace BlackJackGame.Models.Domain
         }
         public void TurnCard()
         {
-
-            throw new NotImplementedException();
+            if (FaceUp == false)
+                FaceUp = true;
+            else
+                FaceUp = false;
         }
     }
 }

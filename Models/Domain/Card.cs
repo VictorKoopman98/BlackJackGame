@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BlackJackGame.Models.Domain
 {
-    class Card
+    public class Card
     {
         public FaceValue FaceValue { get; }
         public Suit Suit { get;  }
