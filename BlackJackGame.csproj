@@ -6,8 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Domain\FaceValue\" />
-    <Folder Include="Models\Domain\Suit\" />
+    <Compile Remove="Models\Domain\**" />
+    <EmbeddedResource Remove="Models\Domain\**" />
+    <None Remove="Models\Domain\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\FaceValue\" />
+    <Folder Include="Models\Suit\" />
   </ItemGroup>
 
 </Project>
