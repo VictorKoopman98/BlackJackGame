@@ -23,6 +23,7 @@ namespace BlackJackGame.Models.Domain
             }
             Shuffle();
         }
+
         public BlackJackCard Draw()
         {
             if (_cards.Count == 0)
